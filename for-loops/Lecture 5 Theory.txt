@@ -1,0 +1,60 @@
+AND BITWISE OPERATION 
+0   0   0
+0   1   0   
+1   0   0
+1   1   1
+
+OR BITWISE OPERATION
+0   0   0   
+0   1   1
+1   0   1
+1   1   1
+
+NOT BITWISE OPERATION
+0   1
+1   0
+
+note: 4 bytes = 32 bits = int
+for changing a positive int value to negative, i.e applying the "not" bitwise operator, first write the number in 
+binary format, in bits. next, read the first digit from left as 0 or 1. this is the thing that shows if the number 
+is positive or negative. Then apply 2s complement to the whole number in binary and convert back to decimal 
+
+XOR BITWISE OPERATION
+0   0   0
+0   1   1
+1   0   1
+1   1   0
+
+LEFT SHIFT
+5 << 1 (5 ko ek baar left shift kardo)
+5 = 000.....000101
+5<<1 = 000...0001010
+
+# in majority cases, in small numbers, when you do left shift, the number gets multiplied by 2
+
+RIGHT SHIFT
+5 >> 1
+
+# in majority cases, in small numbers, when you right shift, the number gets divided by 2 for every one right shift done
+
+# for both left and right shift in positive numbers, the padding is done using 0
+# however for negative numbers, the padding is compiler dependent 
+
+
+INCREMENT AND DECREMENT OPERATORS
+C++ POST INCREMENT
+++C PRE INCREMENT
+C-- POST DECREMENT
+--C PRE DECREMENT
+
+FOR LOOPS
+there can be multiple initializations in for loops using comma separated sequence
+similar to conditions and increment also
+
+OPERATOR PRECEDENCE
+BRACKET
+UNARY
+MULTIPLICATIVE
+ADDITIVE
+SHIFT
+RELATIONAL
