@@ -1,0 +1,37 @@
+if
+if else
+if else
+if else
+else
+
+HOW SWITCH WORKS?
+switch(expression){
+    case 1:
+    break;
+    case 2:
+    break
+    default:
+}
+
+incase of using characters in the switch case, make sure to write them in 'single quotes'
+switch only accepts integer and character values as constants ie the cases
+
+FUNCTIONS
+funtion is a prog which has a well defined task, which when given an input will give an output
+
+<return / datatype> function name (args, args...){
+    function body
+    .
+    .
+    .
+    return value;
+}
+eg. int power(int a, int b){
+    body.....
+    return ans;
+}
+
+FUNCTION CALL
+int a = power (a, b);
+# functions can also be called in cout statements
+
