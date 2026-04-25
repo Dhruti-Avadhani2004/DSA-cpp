@@ -1,0 +1,32 @@
+ARRAYS
+
+similar items of the same datatype stored in contiguous memory locations
+# whole data of 10000 integers is stored in a single variable and not in 10000 variables
+
+DECLARATION
+int thing [10];
+[100  ] [104  ] [108  ] [112   ] 116[] [] [] [] [] [] and so on addresses are mentioned
+
+total 10 memory blocks created each of the size of int which stores integers only
+
+ACCESSING ARRAY ELEMENT
+int arr [10] = {1,2,3};
+arr[0] -> 0th ELEMENT
+arr[1] -> 1th ELEMENT
+etc etc 
+
+if not explicitly declared, the array by default fills in 0s in all the memory locations
+
+FINDING THE SIZE OF THE ARRAY'
+arr_size = sizeof(arr) / sizeof(arr[0]);
+
+NEVER USE VARIABLE TO DECLARE THE ARRAY SIZE
+
+# use max(x,y) and min(x,y) which are inbuilt functions to find the maximum and minimum number out of the two
+
+PASS BY VALUE IN ARRAYS
+when we look at pass by values in arrays, although it is pass by value, we see that the behavior is like 
+pass by reference. this is because, from the main function, when we pass by value our array to another 
+function, we are not sending the entire array to the other function, we are sending the address of the 
+first block of the array to the other function. therefore incase of arrays, the pass by value behaves like
+pass by reference.
