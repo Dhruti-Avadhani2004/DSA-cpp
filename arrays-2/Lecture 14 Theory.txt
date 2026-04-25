@@ -1,0 +1,4 @@
+FINDING PIVOT ELEMENT IN AN ARRAY
+PIVOT -> of a sorted and rotated array, we should find the pivot ELEMENT
+# the minimum value when plotted the graph is the pivot element 
+# BINARY SEARCH CAN ONLY BE APPLIED ON MONOTONIC FUNCTIONS
