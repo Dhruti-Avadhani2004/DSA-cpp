@@ -1,0 +1,24 @@
+NEXT SMALLER ELEMENT PROBLEM
+
+the brute force method gives O(N^2), making use of 2 for loops.
+to optimize, make use of stacks
+
+in the stack implementation, you can start from right to left... 
+if s.top() is smaller than the current element, save s.top() as smaller and go to next 
+else pop until you reach a smaller element and save that and go to next 
+first element to be pushed into the stack = -1;
+
+LARGEST RECTANGLE IN HISTOGRAM PROBLEM
+1. brute force approach
+2. using the concept of next smaller element problem and implementation of stacks
+
+# we can right / left extend a bar, only and only if we get a value greater than or equal to the current bar
+# next smaller element, previous smaller element, and then [width = next smaller element - prev smaller element - 1]
+
+Formula: [width = next smaller element - prev smaller element - 1]
+
+
+MY approach
+-->
+2     1     5     6     2      3
+
