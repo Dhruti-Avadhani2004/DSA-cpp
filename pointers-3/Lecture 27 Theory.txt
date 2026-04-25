@@ -1,0 +1,21 @@
+DOUBLE POINTERS
+int value = 5;
+int *ptr = &value;
+int i = 0;
+doublt j = 1.2;
+float f = 1.2;
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int value = 4;
+	int *ptr = &value;
+	int **ptr2 = &ptr;
+	
+	cout<<*ptr<<" "<<*ptr2<<" "<<value<<endl;
+
+}
+
+output
+4 0x7ffd298500fc 4
