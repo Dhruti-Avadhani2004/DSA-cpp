@@ -1,0 +1,67 @@
+A symbol table is a crucial data structure used by compilers and interpreters to store information about program identifiers—variables, functions, classes, and constants. It maps names to attributes like data type,
+memory address, and scope, allowing the compiler to check for semantic errors, manage scope, and generate efficient code. 
+
+POINTER
+stores addresses
+# always initialize a pointer with some value, never leave it blank
+
+int *ptr = &num;
+>> ptr is an integer type pointer pointing to an address location which stores an integer value
+char *ptr = &ch;
+USE THE FOLLOWING COMPILER : https://www.codechef.com/cpp-online-compiler
+
+QUICK NOTES FOR SYNTAX
+#include <iostream>
+using namespace std;
+
+int main() {
+    // copying a pointer
+    int num = 5;
+    int a = num;
+    a++;
+    
+    int *p = &num; // iske liye amp dalna hota hai
+    (*p)++;
+    int *q = p; // for copy pointer koi bhi star ya amp nhi dalna
+    cout<<p<<"   "<<q;
+	
+}
+
+
+POINTER ARITHMETIC
+THE FIRST CASE INCREASES THE VALUE OF THE VARIABLE WHOSE LOCATION IS STORED IN THE POINTER
+#include <iostream>
+using namespace std;
+
+int main() {
+    // pointer arithmetic
+    int i = 3;
+    int *ptr = &i;
+    cout<<(*ptr)++<<endl;;
+    cout<<*ptr;
+    
+	
+}
+OUTPUT ->
+3
+4
+THIS SECOND IMPLEMENTATION SHOWS THAT THE LOCATION OF THE POINTER IS ONLY INCREMENTING 
+#include <iostream>
+using namespace std;
+
+int main() {
+    // pointer arithmetic
+    int i = 3;
+    int *ptr = &i;
+    cout<<*ptr++<<endl;;
+    cout<<*ptr;
+    
+	
+}
+output -> 
+3
+10923992
+
+SIMPLY PUT,
+*t = *t + 1 (assuming t is a pointer) -> increments value by +1
+t = t + 1; -> goes to the next memory location
