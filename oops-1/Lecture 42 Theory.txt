@@ -1,0 +1,67 @@
+OBJECT ORIENTED PROGRAMMING
+* a programming paradigm which revolves around an object
+* object is an entity described by its --> state / property
+                                       --> behavior
+
+
+CLASSES
+int, string, char --> 
+hero ramesh; --> ramesh variable of type hero
+* class is a user defined datatype
+
+OBJECT
+it is an instance of a class
+
+
+NOTE FROM C TO C++
+A CLASS IS C++ IS SIMILAR TO A STRUCTURE
+
+//TO ACCESS DATA MEMBERS OR PROPERTIES IN CLASS
+MAKE USE OF A "." (DOT)
+
+
+ACCESS MODIFIERS
+1. PUBLIC -> accessed from anywhere
+2. PRIVATE -> accessed only inside the class
+3. PROTECTED
+$$by default in a class, the access modifier is PRIVATE
+
+
+GETTER AND SETTER
+functions that are in a class through which you can access functions
+
+CONSTRUCTOR
+DEFAULT CONSTRUCTOR
+ramesh.hero() ---> ramesh object ko hero wala function call kar dega
+* invoked during object creation
+* has no return type
+* no input parameters
+
+PARAMETERIZED CONSTRUCTOR
+
+THIS KEYWORD
+jo bhi current object hai, uska address this ke ander store hota hai
+
+DEEP AND SHALLOW COPY
+shallow copy: default copy constructor, shallow copy karta hai
+1 = babbar 
+2 = babbar
+change 1st
+1 = gabbar
+2 = gabbar
+
+SHALLOW COPY: SAME MEMORY KO ACCESS KAR RAHE HO ALAG ALAG NAAM SE
+DEEP COPY: THERE WILL BE DIFFERENT MEMORY LOCATED
+
+DESTRUCTOR
+to deallocate memory we use a destructor 
+* when the object is out of scope, tab destructor call hota hai and memory ko deallocate kar deta hai
+* same as class name
+* no return type
+* no input parameters
+
+
+STATIC function
+CALL THE FUNCTION FROM CLASS, OBJECT CREATE KARNE KI NEED NHI hai
+THIS KEYWORD KI BHI ZAROORAT NHI HAI BECAUSE THIS IS POINTER TO OBJECT, AND HERE, THERE ARE NO OBJECTS 
+* static functions can only access static members 
