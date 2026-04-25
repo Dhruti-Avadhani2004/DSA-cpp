@@ -1,0 +1,22 @@
+TIME COMPLEXITY IN RECURSION
+
+1. FACTORIAL
+// base 
+if n == 0{return 1} ----------------------> k1
+return fact(n - 1) * n 
+
+* write the recurrance relation first -> fn = fn-1 * n
+tn = k1 + k2 + tn-1
+tn = k + tn-1
+tn-1 = k + tn-2
+tn = k + t0
+t0 = k1
+
+tn = n*k + k1
+tn = kn
+tn = n --> O(n)
+
+
+2. BINARY SEARCH
+tn = k*logn
+tn = O(logn)
