@@ -1,0 +1,5 @@
+BINARY SEARCH
+
+# always have the binary search loop in a while statement as: while (low <= high)
+# when you update low and high values make them as: low = mid + 1 and high = mid - 1
+# the mid = low + (high - low)/2
