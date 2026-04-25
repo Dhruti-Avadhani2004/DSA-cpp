@@ -1,0 +1,42 @@
+//CODE360 SUBSEQUENCES SUBMISSION
+
+
+#include <bits/stdc++.h>
+
+
+void subsequences(string str, int index, string element, vector<string> &ans){
+	//base case
+	if(index >= str.length()){
+		if(element.length() > 0){
+			ans.push_back(element);
+
+		}
+		
+		return;
+
+	}
+
+	// exclude case
+	subsequences(str, index+1, element, ans);
+
+	//include case
+	int item = str[index];
+	element.push_back(item);
+	subsequences(str, index+1, element, ans);
+
+
+
+}
+
+vector<string> subsequences(string str){
+	int index = 0;
+	string element = "";
+	vector<string> ans;
+	subsequences(str, index, element, ans);
+
+	return ans;
+
+	
+	// Write your code here
+	
+}
