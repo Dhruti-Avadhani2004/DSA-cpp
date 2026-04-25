@@ -1,0 +1,29 @@
+FOR UNIQUE NUMBER IN THE ARRAY
+you dont need to brute force by counting, simply use the XOR operator
+eg. 1 + 3 - 1 = 3
+rg. 4 + 5 - 4 = 5
+
+note that => 1^3^1 = 3
+          => 5^1^3^4^3^5^1 = 4
+
+          the order doesnt matter in xor, what matters is the unique element only, since 0^a = a and a^a = 0
+
+
+HOMEWORK'
+Leetcode: find the unique number of occurances 
+Input: arr = [1,2,2,1,1,3]
+Output: true (else false)
+Explanation: The value 1 has 3 occurrences, 2 has 2 and 3 has 1. No two values have the same number of occurrences.
+
+* leetcode 442
+
+##################################################################################################
+
+LESSONS LEARNT WHILE SOLVING
+1. whenever you need to compare two arrays, always use indexing and pointers in a single while loop instead of 2 for loops, until and unless you need to go back to the beginning of the array in each iteration
+2. you define a vector in the following manner: vector<int> ans;
+3. you add elements to the vector in the following manner: and.push_back(arr1[i]);
+
+
+HOMEWORK 
+SORT 012
