@@ -1,0 +1,8 @@
+STACKS
+LIFO - Last in first out
+OPERTAIONS IN STACKS
+1. Push
+2. Pop
+3. Peek
+4. Empty
+
