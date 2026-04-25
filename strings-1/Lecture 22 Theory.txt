@@ -1,0 +1,39 @@
+STRING IS A CLASS
+
+# 1D character arrays are called strings
+char name[10] = {'a','b','c',.....};
+cin>>name;
+cout<<name;
+
+ASCII \0 -> A terminator, jisse pata lagta hai ki string kahan end hoti hai 
+end of string mein automatically ek null character append ho jata hai
+
+>> input ki execution stop ho jati hai jab aap usse 
+                    `   `                           1. tab 
+                                                    2. space
+                                                    3. escape sequence
+                                                    4. enter
+
+
+PALINDROME
+K A Y A K
+m a l a y a l a m
+
+HOMEWORK: CHECK IF THE STRING IS PALINDROME : CODE STUDIO
+HOMEWORK: KEY DIFFERENCES BETWEEN CHARACTER ARRAY AND STRING
+HOMEWORK: REVERSE WORDS IN STIRNG LEETCODE
+
+
+STRINGS STRINGS STRING STRING STRING STRING STRING STRING STRING STRINGS STRINGS STRING STRING STRING STRING STRING STRING STRING STRINGS STRINGS STRING STRING STRING STRING STRING STRING STRING 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+STRING FUNCTIONS
+
+string s; -> creating a string
+string str = "babbar";
+length = str.length;
+str.push_back('c'); -> append a charater to the string
+str.pop_back(); -> pop the last character in the string 
+
+www.cplusplus.com
+
+
