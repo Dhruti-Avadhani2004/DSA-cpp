@@ -1,0 +1,25 @@
+RECURSION WITH ARRAYS
+
+USING RECURSION TO CHECK IF AN ARRAY IS SORTED OR NOT
+bool isSorted(int arr[], int size){
+    //base case
+    if(size == 0 || size == 1){
+        return true;
+    }
+
+    //recursive 
+    if(arr[0] > arr[1]){
+        return false;
+    }
+    else
+        return bool ans = isSorted(arr + 1, size - 1);
+}
+
+HOMEWORK
+# SUM OF GIVEN ARRAY USING RECURSION
+#lecture 12 - 15 all problems using recursion -> revision 
+
+BINARY SEARCH USING RECURSION
+mid = high + low / 2
+if(arr[mid] < key) {search right half}
+else {search left half}
