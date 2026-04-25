@@ -1,0 +1,40 @@
+LINKED LIST
+it has two components
+* data
+* address to the next element
+
+ADVANTAGES:
+* Dynamic data structure
+* grow / shrink data structure during runtime
+* memory doesnt get wasted while growing or shrinking of the data structure
+* insertion and deletion of a node in a linked list is easier, no shift needed
+* no need for contiguous memory allocation, allocates in heap
+
+TYPES OF LINKED LISTS
+1. SINGLY LINKED LIST
+2. DOUBLY LINKED LIST
+3. CIRCULAR LINKED LIST
+4. CIRCULAR DOUBLY
+
+
+SINGLY LINKED LIST
+it consists of a pointer of type node
+to execute, we shall create a class and keep the data int type 
+we keep a pointer for the linkedlist node 
+INSERTION IN A SINGLY LINKED LIST BEFORE THE HEAD
+1. node * head = null;
+2. node* node1 = new node(10);
+to insert a node, do the following
+3. temp->next = node1;
+4. head = temp
+
+INSERTION IN A SINGLY LINKED LIST
+
+DOUBLY LINKED LIST
+A doubly linked list has 3 things -> prev, next and the data
+* the prev of the head node is null
+* the next of the tail node is null
+
+HOW TO CREATE THE LINKED LIST
+1. create the format for the node, using int data, node *prev and node *next. 
+2. next, create the actual node. for that, create a constructor, with the same name as the class name.
