@@ -1,0 +1,6 @@
+RECURSION
+ek case ke liye solve karna hai, baaki apne aap solve ho jaati hai
+
+CLIMBING STAIRS RECURSIVE RELATION (this is just like fibonacci)
+fn = fn-1 + fn - 2
+base case = if(n<0) return 0; if(n==0) return 1;
