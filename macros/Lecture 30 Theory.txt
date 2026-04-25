@@ -1,0 +1,18 @@
+DEFINING MACROS
+WHAT ARE MACROS?
+
+# define PI 3.14 ( to define PI as 3.14 without allocating memory, as you are replacing before compile time)
+eg. area = PI * r * r;
+
+GLOBAL VARIABLES
+making variables not inside any function, which can be accessed from any function
+
+
+INLINE FUNCTIONS 
+to avoid function calls overhead 
+ans = (a>b) ? a : b; -> ternary operators
+
+inline int funName(){
+    wheerever this function is called, we replace the code with this whole 
+    function line, so no function call and better performance
+}
