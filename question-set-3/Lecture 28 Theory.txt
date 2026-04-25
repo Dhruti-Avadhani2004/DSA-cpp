@@ -1,0 +1,52 @@
+REFERENCE VARIABLE CONTEXT
+same memory location but different variable names
+CREATING A REFERENCE VARIABLE
+int i = 5;
+int &j = i;
+
+WHY USE REFERENCE VARIABLE?
+kisi function mein agar pass by value hoti hai, ek copy create hoti hai uss wale 
+function mein. 
+
+RETURN BY REFERENCE -> very bad practice... WARNING aa jati hai 
+int &update(int n){ // ho skta hai kisi aur code piece ne isko change krdi
+    int a = 10; // ho skta hai ki yeh wali memory access hi na ho
+    int &ans = a;
+    return ans;
+}
+
+VARIABLE LENGTH KA ARRAY
+-> very bad practice
+-> jab koi program run hota hai vo apne sath memory leke aati hai
+-> ek stack memory hoti hai aur ek heap hoti hai
+-> agar compile time pe, pata hota ki 1000 memory locs chahiye toh stack vo vaise hi utni badi leke aayega
+-> agar run time pe pata chala, aur memory ki demand zyada hai aur stack choti hai, toh program crash kar jaayega
+
+HOW TO MAKE VARIABLE SIZE ARRAY?
+-> use "new" keyword
+>>
+new char; -> make a memory for character allocate dynamically // this is the address allocated and no name 
+char *ch = new char;
+int *i = new int; -> 12 byte memory allocate hui hai for this line of code
+int *arr = new int[5]; -> total = 28 bytes
+-> new char heap mein bnega aur ch ka pointer stack mein banega
+
+##### JO STACK MEIN MEMORY ALLOCATE HOTI HAI, USKO STATIC BOLTE HAI AUR JO HEAP MEIN ALLOCATE HOTI HAI,
+      USKO DYNAMIC KEHTE HAI
+
+
+DIFFERENCE BETWEEN STATIC AND DYNAMIC MEMORY ALLOCATION
+# memory ka fark hota hai
+
+FREEING MEMORY
+in dynamic memeory allocation, you need to manually clear the memory reserved in the heap
+using the "delete" keyword
+
+int *i = new int;
+delete i;
+
+###### always deallocate memory when you dynamically allocate memory
+###### in case of stack, memory clears after program execution
+
+
+
