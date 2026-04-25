@@ -1,0 +1,8 @@
+kisi bhi number ka mod karoge toh vo 0 aur n-1 ke beech aata hai
+nth index % n = 0
+so the last element ko 0th index pe daal denge
+arr[(i + k) % n] = arr[i]
+
+FOR SORTED AND ROTATED ARRAY
+arr[i - 1] > arr[i]
+matlab, ek aisa case aata hai jahan pichla element next element se bada hai. if it is sorted and rotated. 
