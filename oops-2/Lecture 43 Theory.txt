@@ -1,0 +1,80 @@
+OOPS
+4 PILLARS OF OOPS
+
+ENCAPSULATION
+* wrapping up data members and functions
+* data memebers and functions ko single entity mein daal diya, yeh hai ENCAPSULATION
+REASON FOR ENCAPSULATION
+* synonym ---> information / data hiding
+* hide data using encapsulation (usko private mark karne se you cant access that from anywhere else) --> improve security
+* if we want we can make class read-only 
+* code reusability
+* helps in unit testing --> makes unit testing easier
+
+INHERITANCE
+* child class inherits from the parent class
+* eg --> parent class = human
+         child classes = male, female
+         
+* modes: public, private, protected
+code: class <child>: public <parent>
+MODE OF INHERITANCE
+mode(base)  public              protected           private
+public      public              protected           private
+protected   protected           protected           private
+private     not accessible      not accessible      not accessible
+
+superclass ---> access modifier
+                property
+                data members
+subclass ---> mode of inheritance 
+
+PROTECTECTED: SIMILAR TO PRIVTE 
+APNE CLASS MEIN ACCESS KAR SAKTE HAI DUSRE NHI, EXCEPT, CHILD CLASS ACCESS KAR SAKTI HAI 
+
+TYPES OF INHERITANCE:
+SINGLE INHERITANCE
+    if B is inherited from A, it is called single inheritance
+MULTI-LEVEL
+    if C inherits from B and B inherits from A, then it is called multilevel inheritance
+MULTIPLE
+    if C inherits from A and also inherits from B 
+HYBRID
+    combination of more than one "type" of inheritance, like, single and hierarchical 
+HIERARCHICAL
+    one class serve as parent class for more than one child class
+
+INHERITANCE AMBIGUITY
+object.A::fun()
+* ambiguity is when the same fun() named function is there in A, B, C classes and you dont know which fun() you are trying to call
+
+
+POLYMORPHISM
+* literally, existing in multiple forms
+
+COMPILE TIME POLYMORPHISM (static polymorphism)
+gets to know during compile time that there is POLYMORPHISM
+    FUNCTION OVERLOADING
+    * function with same name but with different arguments only can be implemented
+    * cannot be implemented if the return type alone is different
+    * can also work if the number of arguments is same but their datatypes are different 
+
+    OPERATOR OVERLOADING
+    code:
+    <return type> operator <+> (B &obj){....}
+    * operator se custom kaam karvana
+
+RUNTIME POLYMORPHISM (dynamic polymorphism)
+    METHOD OVERRIDING
+    * method of parent class and method of child class must be the same
+    * arguments must be the same
+    * possible through inheritance only
+
+
+ABSTRACTION
+* AKA IMPLEMENTATION HIDING 
+* implemented using access specifiers and access modifier
+ADVANTAGES
+* only you can change your code
+* code visibility and duplication
+* scope blah blah 
