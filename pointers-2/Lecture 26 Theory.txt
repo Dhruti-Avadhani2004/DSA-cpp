@@ -1,0 +1,27 @@
+POINTER IN ARRAYS
+
+int arr[10]; 
+name of arr 4 * 10 = 40 bytes
+the name of the array shows the first memory block of the array ka address
+address of first block of array = address of array
+
+READ * AS "ADDRESS AT"
+
+CHALAKI 
+arr[i] = *(arr + i);
+is the same AS
+i[arr] = *(i + arr);
+
+DIFFERENCE BETWEEN POINTERS AND ARRAYS
+behind the scenes
+int arr[10]; --> memeory is allocated for 10 blocks for 40 bytes and arr points to first memory location, the same is in the symbol table
+int *p = &arr[0] --> create a pointer pointing to the first memory location of the array arr
+
+
+CHARACTER ARRAYS
+for int arrays it cout shows the address
+but in case of char arrays, it prints the entire content
+
+
+POINTERS AND FUNTIONS
+ek pointer agar pass ho raha hai in the update method, then use * to update the value in the original memeory location using the function
