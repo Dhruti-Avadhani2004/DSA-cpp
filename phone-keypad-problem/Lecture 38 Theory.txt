@@ -1,0 +1,4 @@
+ int num = digits[index] - '0';
+
+ if digits[index] value is a number typecasted to a string, then do - '0' from it (minus zero) as a string
+ to get the thing as a number so that it can be stored in int num;
