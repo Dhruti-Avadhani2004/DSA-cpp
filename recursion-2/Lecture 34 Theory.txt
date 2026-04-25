@@ -1,0 +1,8 @@
+POWERS
+
+given a^b -> this can be written in multiple ways.
+
+in a^b, if b is even ---> a^(b/2) * a^(b/2)
+        if b is odd ----> a * (a^(b/2) * a^(b/2))
+        
+         
