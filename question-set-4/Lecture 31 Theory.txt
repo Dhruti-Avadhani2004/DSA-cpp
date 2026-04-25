@@ -1,0 +1,42 @@
+RECURSION
+a function calling itself is called recursion 
+eg. 
+solve(){
+    .....
+    ...
+    solve();
+}
+
+UNDERSTANDING RECURSION
+big problem ka solution depend karta hai same type ki chhoti problem,
+then we shall use recursion.
+
+eg. 2^4 = 2*2*2*2
+    2^4 = 2 * 2^3 --> recursion
+    2^n = 2 * 2^(n-1)
+    f(n) = 2 * f(n-1) --> recursive relation
+
+### where you want to stop the recursion, it is called as base case
+### base case mein return statement likhna mandatory hai
+to write a recursive statement, we need the following:
+                                                        * a recurrance relation
+                                                        * a base case
+                                                        ** processing eg. ++, --, +2, +3 etc
+
+IMPORTANCE OF BASE CASE 
+## base case hone se pata hota hai ki kab rukna hota hai
+## bina base case ke code run karne se segmentation fault aata hai
+## segmentation fault -> memory full / stack overflow
+
+HEAD RECURSION AND TAIL RECURSION
+1. fun(){ ----------------------------------> TAIL RECURSION
+    1. base case
+    2. processing
+    3. recurrance relation
+}
+
+2. fun(){-----------------------------------> HEAD RECURSION
+    1. base case
+    2. recurrance relation
+    3. processing
+}
