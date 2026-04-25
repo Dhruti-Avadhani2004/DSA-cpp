@@ -1,0 +1,87 @@
+PSEUDOCODE FOR MERGE SORT
+merge sort has two functions - mergeSort and merge
+
+the first function, MERGESORT is for splitting the bigger array
+into little arrays and sorting them in order
+
+the second function, MERGE is to finally merge the split arrays
+into one bigger array.
+
+these two functions work together to sort an array using the mergesort algo
+
+PSEUDOCODE::
+
+void mergeSort(vector<int> &arr, int low, int high){
+    // base case
+    if(low >= high){
+        return;
+    }
+
+    //calculate mid
+    mid = low + ((high - low)/2);
+
+    // sort the left part of the array
+    mergeSort(arr, low, mid);
+
+    //sort the right part of the array
+    mergeSort(arr, mid + 1, high);
+
+    //merge the two arrays
+    merge(arr, low, high);
+}
+
+void merge(vector<int> &arr, int low, int high){
+    int mid = low + ((high - low)/2);
+
+    int len1 = mid - low + 1;
+    int len2 = high - mid;
+
+    vector<int> arr1(len1);
+    vector<int> arr2(len2);
+
+    // copying main array into two sub arrays
+
+    int k = low;
+    for(int i = 0; i < len1; i++){
+        arr1[i] = arr[k];
+        i++;
+        k++;
+    }
+
+    k = mid + 1;
+    for(int i = 0; i < len2; i++){
+        arr2[i] = arr[k];
+        i++;
+        k++;
+    }
+
+    // sorting and merging the two sub arrays into the main array
+    int ind1 = 0;
+    int ind2 = 0;
+    k = low;
+
+    while(ind1 < len1 && ind2 < len2){
+        if(arr1[ind1] < arr2[ind2]){
+            arr[k] = arr1[ind1];
+            k++;
+            ind1++;
+        }
+        else{
+            arr[k] = arr2[ind2];
+            k++;
+            ind2++;
+        }
+    }
+
+    while(ind1 < len1){
+        arr[k] = arr1[ind1];
+        k++;
+        ind1++;
+    }
+
+    while(ind2 < len2){
+        arr[k] = arr2[ind2];
+        k++;
+        ind2++;
+    }
+}
